@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-grey-500">
+
+    <!-- Navbar -->
+    <nav class="bg-green-500 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="#" class="text-2xl font-bold text-blue-600">Sustainability</a>
+                    </div>
+                    <!-- Navigation Links -->
+                    <div class="hidden md:flex space-x-6 ml-10">
+                        <a href="#" class="text-gray-700 hover:text-blue-600 flex-shrink-0 flex items-center ">Home</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 flex-shrink-0 flex items-center">Services</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 flex-shrink-0 flex items-center">Ideas</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 flex-shrink-0 flex items-center">Contact</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 flex-shrink-0 flex items-center">About Us</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-button" class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Features</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </nav>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById("menu-button").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>
+
