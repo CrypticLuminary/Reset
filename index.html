@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-green-700 shadow-md">
+        <div class="max-w-9pxl mx-auto px-4 sm:px-6 lg:px-">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <!-- Logo -->
+                    <div class="flex items-center justify-between l">
+                        <i class="fa-solid fa-recycle text-5xl p-1"></i>
+                        <a href="#" class="text-2xl font-bold text-black-600 p-1">Recycle With Us</a>
+                    </div>
+                    <!-- Navigation Links -->
+                    <div class="hidden md:flex space-x-6 ml-10">
+                        <a href="#" class="text-black hover:text-blue-950 ">Home</a>
+                        <a href="#" class="text-black hover:text-blue-950 ">Services</a>
+                        <a href="#" class="text-black hover:text-blue-950 ">Ideas</a>
+                        <a href="#" class="text-black hover:text-blue-950 ">Contact</a>
+                        <a href="#" class="text-black hover:text-blue-950 ">About Us</a>
+                    </div>
+                </div>
+
+                <!-- Icons Section -->
+                <div class="flex items-center space-x-4">
+                    <!-- Search Icon -->
+                    <button id="search-toggle" class="text-gray-700 focus:outline-none">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <!-- Customer Care Icon -->
+                    <a href="#" class="text-gray-700 focus:outline-none">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button id="menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Features</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+
+        <!-- Search Bar (Hidden by Default) -->
+        <div id="search-bar" class="hidden bg-white border-t border-gray-300 p-2">
+            <div class="max-w-7xl mx-auto px-4">
+                <input type="text" placeholder="Search..." class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+        </div>
+    </nav>
+
+    <!-- JavaScript for Menu and Search Toggle -->
+    <script>
+        document.getElementById("menu-button").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden")
+        });
+
+        document.getElementById("search-toggle").addEventListener("click", function () {
+            document.getElementById("search-bar").classList.toggle("hidden")
+        });
+    </script>
+
+    <section class="hero">
+        <div class="hero-content ">
+          <h1>Welcome to a Sustainable Future</h1>
+          <div class="bag">
+          <p>Join us in making the world a better place. Small steps today lead to big changes tomorrow.</p>
+          <!-- </div>
+        
+        </div> -->
+      </section>
+      <section class="company" id="cmp">
+        <h1 class="heading">Our<span>Services</span> </h1>
+        <div class="box-container">
+            <div class="box"></div>
+        </div>
+      </section>
+<footer>
+    <div class="foot-1">
+        Back to Top
+    </div>
+    <div class="foot-2">
+        <ul>
+            <p>
+                Get to Know Us
+            </p>
+            <a>About Us</a>
+            <a>Services</a>
+            <a>Blogs</a>
+            <a>Ideas</a>
+        </ul>
+        <ul>
+            <p>Connect With Us</p>
+            <div class="images">
+            <a>Facebook</a>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="img-twitter">
+            <a>Twitter</a>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+            <div class="img-inst">
+                <a>Instagram</a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+           
+       
+        </ul>
+        <ul>
+            <div class="contact">
+                <p>Contact Us</p>
+            </div>
+            <div class="contact-us">
+                <a>Email:info@recyclewithus@gmail.com</a>
+                <a>Phone:989516565</a>
+                <a href="#">Address:Khwopa Engineering College,Libali</a>
+            </div>
+            </ul>
+    </div>
+    <!-- <div class="foot-3">
+
+    </div> -->
+</footer>
+</body>
+</html>
