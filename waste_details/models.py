@@ -46,6 +46,7 @@ class DisposalMethod(models.Model):
 
 class WasteDetails(models.Model):
     producer = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='', blank=True, null=True)
     types_of_waste = models.CharField(max_length=100, choices=TYPESOFWASTEPRODUCED)
     frequency = models.ForeignKey(FrequencyType, on_delete=models.CASCADE)
     quantity = models.DecimalField(max_digits=10, decimal_places=2)

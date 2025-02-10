@@ -10,6 +10,7 @@ USER_TYPES_CHOICES = [
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    logo = models.ImageField(upload_to='', blank=True, null=True)
     user_type = models.CharField(max_length=50, choices=USER_TYPES_CHOICES, default='producer')
     contact_info = models.CharField(max_length=100, blank=True)
     address = models.CharField(max_length=100, blank=True, null=True)

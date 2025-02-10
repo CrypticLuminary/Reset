@@ -23,4 +23,4 @@ class SignUpForm(UserCreationForm):
     class ProfileUpdateForm(forms.ModelForm):
         class Meta:
             model = UserProfile
-            fields = ['contact_info','address','organization_name']
+            fields = ['logo','contact_info','address','organization_name']

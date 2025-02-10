@@ -3,7 +3,7 @@ from .models import WasteDetails, FrequencyType, DisposalMethod
 
 @admin.register(WasteDetails)
 class WasteDetailsAdmin(admin.ModelAdmin):
-    list_display = ['producer', 'types_of_waste', 'quantity', 'frequency', 'disposal_method']
+    list_display = ['producer', 'image','types_of_waste', 'quantity', 'frequency', 'disposal_method']
     search_fields = ['producer__username', 'types_of_waste', 'quantity']
     list_filter = ['types_of_waste', 'frequency', 'disposal_method', 'producer']
 
