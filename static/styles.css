@@ -120,3 +120,19 @@ body {
   ul p {
     font-weight: large;
   }
+
+
+  .logout_button{
+    color: #fff;
+    background: #353340;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: .5s ease;
+  }
+  .logout_button:hover{
+    background: #ff7551;
+  }
+
+  

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-gray-100">
+    <header>
+        <nav class="bg-green-700 shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16 items-center">
+                    <div class="flex items-center">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-recycle text-5xl p-1 text-white"></i>
+                            <a href="#" class="text-2xl font-bold text-white">Recycle With Us</a>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="text-white hover:text-blue-300">Home</a>
+                        <a href="#services" class="text-white hover:text-blue-300">Services</a>
+                        <a href="#contact" class="text-white hover:text-blue-300">Contact</a>
+                        <a href="#about" class="text-white hover:text-blue-300">About Us</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button id="search-toggle" class="text-white focus:outline-none">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <a href="#" class="text-white focus:outline-none" id="user-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-blue-300">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <button id="menu-button" class="md:hidden text-white focus:outline-none">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-2">
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+                <a href="#services" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+                <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+            </div>
+        </nav>
+        <script>
+            document.getElementById("menu-button").addEventListener("click", function () {
+                document.getElementById("mobile-menu").classList.toggle("hidden");
+            });
+        </script>
+    </header>
+</body>
+</html>

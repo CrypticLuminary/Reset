@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="h-screen flex items-center justify-center bg-cover bg-center"  background="transparent">
+    <div class="w-96 bg-green-600 bg-opacity-75 p-8 rounded-lg shadow-lg text-white">
+        <h1 class="text-3xl font-bold text-center">Sign Up</h1>
+        
+        <form class="mt-6" background="bg-green-700">
+            <div class="relative mb-4" background="bg-green-700">
+                <input type="text" placeholder="Username" required class="w-full p-3 pl-10 bg-white border border-white rounded-full text-black focus:outline-none">
+                <i class="fa-solid fa-user absolute left-3 top-3 text-white"></i>
+            </div>
+            <div class="relative mb-4">
+                <input type="password" placeholder="Password" required class="w-full p-3 pl-10 bg-white border border-white rounded-full text-black focus:outline-none">
+                <i class="fa-solid fa-lock absolute left-3 top-3 text-white"></i>
+            </div>
+            
+            <div class="mb-6">
+                <label class="block mb-2"><input type="radio" name="userType" value="recycler" class="mr-2"> Recycler</label>
+                <label class="block"><input type="radio" name="userType" value="waste_producer" class="mr-2"> Waste Distributor</label>
+            </div>
+            
+            <button class="w-full bg-white text-green-700 py-2 rounded-full font-bold hover:bg-green-600 hover:text-white transition">Done</button>
+        </form>
+    </div>
+   <div class="box p-10">
+        <div>
+        <div class="mt-6 p-4 bg-gray-800 rounded-lg">
+            <h2 class="text-xl font-semibold text-white" style="font-family: 'Roboto', sans-serif;">Monthly Subscription</h2>
+            <h3 class="text-xl font-semibold text-white">For Recyclers</h3>
+            <p class="text-sm mt-2 text-white">Get access for a month at just <span class="font-bold">Rs1000</span></p>
+            <h3 class="text-xl font-semibold text-white">For Waste Distributors</h3>
+            <p class="text-sm mt-2 text-white">Get access for a month at just <span class="font-bold">Rs1250</span></p>
+            <button class="mt-3 w-full bg-yellow-400 text-black py-2 rounded-full font-bold hover:bg-yellow-500 transition">Subscribe</button>
+        </div>
+    </div> 
+    <div >
+        <div class="mt-4 p-4 bg-gray-800 rounded-lg">
+            <h2 class="text-xl font-semibold text-white" style="font-family: 'Roboto', sans-serif;">Yearly Subscription</h2>
+            <h3 class="text-xl font-semibold text-white">For Recyclers</h3>
+            <p class="text-sm mt-2 text-white">Save more with a yearly plan for <span class="font-bold">Rs 1299</span></p>
+            <h3 class="text-xl font-semibold text-white">For Waste Distributors</h3>
+            <p class="text-sm mt-2 text-white">Save more with a yearly plan for <span class="font-bold">Rs 1499</span></p>
+            <button class="mt-3 w-full bg-blue-400 text-white py-2 rounded-full font-bold hover:bg-blue-500 transition">Subscribe</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
