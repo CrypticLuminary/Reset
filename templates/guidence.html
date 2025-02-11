@@ -1,0 +1,41 @@
+<section class="new" id="new">
+    <div class="heading">
+        <h1 class="text-7xl font-bold">Guidance</h1>
+    </div>
+    <div class="swiper-container guidance">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="media/home/guide.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="media/home/guide1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="media/home/guide2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="media/home/guide3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="media/home/guide4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="media/home/guide5.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper('.swiper-container.guidance', {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    });
+</script>
